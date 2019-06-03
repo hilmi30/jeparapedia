@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "735919145455",
+    "firebase_url": "https://jeparapedia-9083d.firebaseio.com",
+    "project_id": "jeparapedia-9083d",
+    "storage_bucket": "jeparapedia-9083d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735919145455:android:180c25ad613fe182",
+        "android_client_info": {
+          "package_name": "com.hillme.jeparapedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735919145455-igili0g004r9mcm93co9c8l1d2ht4clh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf7PQqMFuhzNV-hKoLSMeU4-eErrBEcKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735919145455-igili0g004r9mcm93co9c8l1d2ht4clh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
