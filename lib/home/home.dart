@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'body.dart';
+import 'package:jeparapedia/home/carousel.dart';
+import 'package:jeparapedia/home/grid.dart';
+import 'package:jeparapedia/home/list_vertical.dart';
 
 class Home extends StatelessWidget {
   
@@ -27,7 +28,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar,
-      body: Body(),
+      body: ListView(
+        children: <Widget>[
+          Carousel(),
+          Grid(),
+          ListVertical(),
+        ],
+      ),
     );
   }
 }

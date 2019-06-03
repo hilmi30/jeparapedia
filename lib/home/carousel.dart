@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:jeparapedia/event/eventdetail.dart';
 
 int _current = 0;
 
@@ -30,14 +31,21 @@ class _CarouselState extends State<Carousel> {
                     height: 200.0,
                     enableInfiniteScroll: true,
                     viewportFraction: 1.0,
-                    items: snapshot.data.documents.map((doc) {
-                      return Container(
+                    items: snapshot.data.documents.map((DocumentSnapshot doc) {
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => EventDetail(doc),
+                          ));
+                        },
+                        child: Container(
                           width: MediaQuery.of(context).size.width,
                           child: FadeInImage.assetNetwork(
                             placeholder: 'assets/images/placeholder-image.png',
                             image: doc['src'],
                             fit: BoxFit.cover,
                           ),
+                        ),
                       );
                     }).toList(),
                     autoPlay: true,

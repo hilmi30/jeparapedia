@@ -8,11 +8,9 @@ final lng = 110.667343;
 
 List<NewData> newData = List();
 
-class ListVertical extends StatefulWidget {
-  _ListVerticalState createState() => _ListVerticalState();
-}
+class ListVertical extends StatelessWidget {
+  const ListVertical({Key key}) : super(key: key);
 
-class _ListVerticalState extends State<ListVertical> {
   @override
   Widget build(BuildContext context) {
     return Column(
